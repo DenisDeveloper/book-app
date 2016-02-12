@@ -1,0 +1,22 @@
+.wrapper{
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.pl{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.plbase{
+  transform: translateZ(0);
+}
+
+.plback{
+  transform: translateZ(-1px);
+}

@@ -1,0 +1,308 @@
+.wrapper{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+p{
+  margin-bottom: 0;
+}
+p+p{
+  text-indent: 1.5em;
+  margin-top: 0;
+}
+
+.ufoInner{position:absolute; animation: ufo 20s ease-in-out infinite;opacity:0.5; }
+@keyframes ufo { 50% {transform: translate(10px, -80px) scale(1.2) rotate(2deg);
+    opacity:1.0;
+}}
+
+.layer-0{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #360033; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #360033, #000, #0b8793); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #360033, #000, #0b8793); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /*background: -moz-linear-gradient(#360033 40%, #0b8793);
+  background: -webkit-linear-gradient(#000 40%, #0086BD);
+  background: -o-linear-gradient(#000 40%, #0086BD);
+  background: -ms-linear-gradient(#000 40%, #0086BD);
+  background: linear-gradient(#000 40%, #0086BD);*/
+}
+
+.layer{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.layer-cloud{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(img/oblaka.png) 100% 100% no-repeat;
+  background-size: cover;
+}
+
+.layer-text{
+  transition: transform 2s ease;
+  transform: scale(1);
+  color: #c3c3c3;
+  font-size: 23px;
+  top: 100px;
+  right: 400px;
+  position: absolute;
+  width: 700px;
+  height: 700px;
+}
+
+
+
+.layer-planet{
+  transform: scale(0.6);
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: url(img/planet.png) 100% 100% no-repeat;
+  background-size: cover;
+  -webkit-animation: col 5s ease-in infinite;
+  animation: col 5s ease-in infinite;
+}
+
+.layer-planet:after{
+  content: "";
+  border-radius: 50%;
+  box-shadow: 0 0 100px 10px #2FC0F9;
+  position: inherit;
+  height: 479px;
+  width: 479px;
+  top: 10px;
+  left: 10px;
+}
+
+.layer-7{
+  left: 220px;
+  bottom: 60px;
+  width: 500px;
+  height: 500px;
+  -webkit-transform:translate3d(0,0,-10px);
+  transform: translate3d(0, 0, -200px);
+  -webkit-filter: contrast(2);
+  filter: contrast(2);
+
+  background: url(img/layer-7.png) 20% 20% no-repeat;
+  background-size: cover;
+  animation: ufo 20s ease-in-out infinite;opacity:0.5;
+}
+
+.layer-7-2{
+  left: 220px;
+  bottom: 60px;
+  width: 500px;
+  height: 500px;
+  -webkit-transform:translate3d(0,0,-5px);
+  transform: translate3d(0, 0, -200px);
+  -webkit-filter: contrast(2);
+  filter: contrast(2);
+  -webkit-filter: blur(2);
+  filter: blur(2);
+  background: url(img/layer-7.png) 20% 20% no-repeat;
+  background-size: cover;
+  animation: ufo 20s ease-in infinite;opacity:0.5;
+}
+
+
+.layer-3{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(img/p1.png) 100% 100% no-repeat;
+  background-size: cover;
+  -webkit-filter: blur(1);
+  filter: blur(1);
+}
+
+.layer-4{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(img/layer-4.png) 100% 100% no-repeat;
+  background-size: cover;
+}
+.layer-2{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(img/layer-3.png) 100% 100% no-repeat;
+  background-size: cover;
+}
+.layer-1{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(img/bg2.png) 100% 100% no-repeat;
+  background-size: cover;
+  -webkit-animation: col 5s ease infinite;
+  animation: col 5s ease infinite;
+}
+
+.layer-6{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(img/layer-6.png) 100% 100% no-repeat;
+  background-size: cover;
+}
+
+/*.layer-7{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(img/layer-7.png) 100% 100% no-repeat;
+  background-size: cover;
+}*/
+
+.layer-8{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(img/layer-8.png) 100% 100% no-repeat;
+  background-size: cover;
+}
+
+.layer-9{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(img/layer-9.png) 100% 100% no-repeat;
+  background-size: cover;
+}
+
+.layer-10{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(img/layer-10.png) 100% 100% no-repeat;
+  background-size: cover;
+}
+
+@keyframes smoky {
+  60% {
+    text-shadow: 0 0 40px whitesmoke;
+  }
+  to {
+    -webkit-transform: translate3d(15rem, -8rem, 0) rotate(-40deg) skewX(70deg) scale(1.5);
+            transform: translate3d(15rem, -8rem, 0) rotate(-40deg) skewX(70deg) scale(1.5);
+    text-shadow: 0 0 20px whitesmoke;
+    opacity: 0;
+  }
+}
+
+@keyframes gradientSize {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0.8;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes col{
+  0%{
+    -webkit-filter: saturate(1);
+    filter: saturate(1);
+  }
+  50%{
+    -webkit-filter: saturate(5);
+    filter: saturate(5);
+  }
+  100%{
+    -webkit-filter: saturate(1);
+    filter: saturate(1);
+  }
+}
+
+.clouds_one {
+	background:url("img/cloud_one.png") no-repeat bottom;
+	position:absolute;
+	left:0;
+	top:10%;
+	height:100%;
+	width:300%;
+	-webkit-animation:cloud_one 50s linear infinite;
+	-moz-animation:cloud_one 50s linear infinite;
+	-o-animation:cloud_one 50s linear infinite;
+	-webkit-transform:translate3d(0,0,0);
+	-moz-transform:translate3d(0,0,0);
+	-o-transform:translate3d(0,0,0);
+	/*-webkit-filter: brightness(0.6);*/
+}
+
+.clouds_two {
+	background:url("img/cloud_two.png") no-repeat bottom;
+	position:absolute;
+	left:0;
+	top:10%;
+	height:100%;
+	width:300%;
+	-webkit-animation:cloud_two 75s linear infinite;
+	-moz-animation:cloud_two 75s linear infinite;
+	-o-animation:cloud_two 75s linear infinite;
+	-webkit-transform:translate3d(0,0,0);
+	-moz-transform:translate3d(0,0,0);
+	-o-transform:translate3d(0,0,0);
+	/*-webkit-filter: brightness(0.6);*/
+}
+
+.clouds_three {
+	background:url("img/cloud_three.png") no-repeat bottom;
+	position:absolute;
+	left:0;
+	top:10%;
+	height:100%;
+	width:300%;
+	-webkit-animation:cloud_three 100s linear infinite;
+	-moz-animation:cloud_three 100s linear infinite;
+	-o-animation:cloud_three 100s linear infinite;
+	-webkit-transform:translate3d(0,0,0);
+	-moz-transform:translate3d(0,0,0);
+	-o-transform:translate3d(0,0,0);
+	/*-webkit-filter: brightness(0.6);*/
+}
+
+@-webkit-keyframes cloud_one {
+	0% {
+		left:0
+	}
+
+	100% {
+		left:-200%
+	}
+}
+
+@-webkit-keyframes cloud_two {
+	0% {
+		left:0
+	}
+
+	100% {
+		left:-200%
+	}
+}
+
+@-webkit-keyframes cloud_three {
+	0% {
+		left:0
+	}
+
+	100% {
+		left:-200%
+	}
+}
